@@ -14,6 +14,11 @@ Personal development tools, configs, templates, and automation I use across mach
 
 Reusable prompts, instructions, and skills for coding assistants.
 
+### `devcontainers`
+
+Starter dev container setups for common stacks.
+Each directory should be usable as a copy-paste baseline.
+
 ### `scripts`
 
 Small, focused scripts that remove friction.
@@ -50,5 +55,6 @@ If something might belong here someday - put it in the project repo first. Promo
 Consistency matters.
 
 - Scripts: **verb-noun** (`cleanup-branches.sh`)
+- Dev containers: **stack-based** (`node`, `python`, `go`)
 - AI prompts: **task-oriented** (`code-review.md`, not `review1.md`)
 - Avoid junk folders (`misc`, `old`, `temp`)

@@ -1,0 +1,28 @@
+{
+  "name": "Base",
+  "image": "mcr.microsoft.com/devcontainers/base:noble",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers-extra/features/claude-code:1": {}
+  },
+  "mounts": [
+    "source=${localEnv:HOME}/.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached,readonly",
+    "source=${localEnv:HOME}/.gitconfig.local,target=/root/.gitconfig.local,type=bind,consistency=cached,readonly",
+    "source=${localEnv:HOME}/.gitignore,target=/root/.gitignore,type=bind,consistency=cached,readonly",
+    "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,readonly"
+  ],
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code",
+        "christian-kohler.path-intellisense",
+        "github.copilot-chat",
+        "github.vscode-github-actions",
+        "github.vscode-pull-request-github",
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
+  }
+}

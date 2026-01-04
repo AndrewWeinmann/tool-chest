@@ -1,0 +1,35 @@
+{
+  "name": "TS Node 24",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:dev-24-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers-extra/features/claude-code:1": {}
+  },
+  "mounts": [
+    "source=${localEnv:HOME}/.gitconfig,target=/home/node/.gitconfig,type=bind,consistency=cached,readonly",
+    "source=${localEnv:HOME}/.gitconfig.local,target=/home/node/.gitconfig.local,type=bind,consistency=cached,readonly",
+    "source=${localEnv:HOME}/.gitignore,target=/home/node/.gitignore,type=bind,consistency=cached,readonly",
+    "source=${localEnv:HOME}/.ssh,target=/home/node/.ssh,type=bind,readonly"
+  ],
+  "remoteUser": "node",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code",
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense",
+        "davidanson.vscode-markdownlint",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "github.copilot-chat",
+        "github.vscode-github-actions",
+        "github.vscode-pull-request-github",
+        "redhat.vscode-yaml",
+        "richie5um2.vscode-sort-json",
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
+  },
+  "postCreateCommand": "npm ci && npx playwright install --with-deps"
+}
