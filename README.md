@@ -14,6 +14,11 @@ Personal development tools, configs, templates, and automation I use across mach
 
 Reusable prompts, instructions, and skills for coding assistants.
 
+### `configs`
+
+Configuration files for various tools and services.
+Organized by tool or purpose for easy reference and reuse.
+
 ### `devcontainers`
 
 Starter dev container setups for common stacks.

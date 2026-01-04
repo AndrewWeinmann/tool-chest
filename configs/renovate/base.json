@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "helpers:disableTypesNodeMajor",
+    ":automergeDisabled",
+    ":combinePatchMinorReleases",
+    ":ignoreUnstable",
+    ":maintainLockFilesMonthly",
+    ":prConcurrentLimitNone",
+    ":prHourlyLimitNone",
+    ":prImmediately",
+    ":rebaseStalePrs",
+    ":separateMajorReleases",
+    ":updateNotScheduled"
+  ],
+  "packageRules": [
+    {
+      "groupName": "Testing Library",
+      "matchPackagePrefixes": ["@testing-library/"]
+    },
+    {
+      "groupName": "Emotion",
+      "matchPackagePrefixes": ["@emotion/"]
+    }
+  ],
+  "timezone": "America/Chicago"
+}

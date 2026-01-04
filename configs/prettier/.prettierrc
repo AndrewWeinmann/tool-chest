@@ -1,0 +1,11 @@
+{
+  "arrowParens": "avoid",
+  "endOfLine": "lf",
+  "plugins": ["prettier-plugin-organize-imports"],
+  "printWidth": 120,
+  "proseWrap": "preserve",
+  "quoteProps": "preserve",
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "all"
+}
