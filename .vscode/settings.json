@@ -13,6 +13,7 @@
     "ecdsa",
     "esbenp",
     "kohler",
+    "Liskov",
     "nullglob",
     "richie",
     "shellcheck",

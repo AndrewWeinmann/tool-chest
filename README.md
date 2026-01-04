@@ -10,6 +10,10 @@ Personal development tools, configs, templates, and automation I use across mach
 
 ## Structure
 
+### `ai`
+
+Reusable prompts, instructions, and skills for coding assistants.
+
 ### `scripts`
 
 Small, focused scripts that remove friction.
@@ -46,4 +50,5 @@ If something might belong here someday - put it in the project repo first. Promo
 Consistency matters.
 
 - Scripts: **verb-noun** (`cleanup-branches.sh`)
+- AI prompts: **task-oriented** (`code-review.md`, not `review1.md`)
 - Avoid junk folders (`misc`, `old`, `temp`)
