@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# SSH private keys (just in case)
+*id_rsa*
+*id_ed25519*
+*id_ecdsa*
+*.pem
+
+# Local configuration overrides
+*.local

@@ -1,0 +1,27 @@
+{
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "cSpell.ignorePaths": [
+    "package-lock.json"
+  ],
+  "cSpell.words": [
+    "Anson",
+    "davidanson",
+    "ecdsa",
+    "esbenp",
+    "kohler",
+    "richie",
+    "shellcheck",
+    "timonwong"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "LICENSE": "plaintext"
+  },
+  "git.inputValidation": true,
+  "git.inputValidationLength": 72,
+  "git.inputValidationSubjectLength": 60,
+  "markdownlint.severityForWarning": "Hint"
+}
