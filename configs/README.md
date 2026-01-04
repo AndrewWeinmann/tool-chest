@@ -2,6 +2,10 @@
 
 Configuration files for various tools used in development.
 
+## Dependabot
+
+[Dependabot](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide) configuration files to automate dependency updates.
+
 ## Prettier
 
 [Prettier](https://prettier.io/) configuration files for code formatting.
