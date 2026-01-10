@@ -7,10 +7,12 @@
     "ghcr.io/devcontainers-extra/features/claude-code:1": {}
   },
   "mounts": [
-    "source=${localEnv:HOME}/.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached,readonly",
-    "source=${localEnv:HOME}/.gitconfig.local,target=/root/.gitconfig.local,type=bind,consistency=cached,readonly",
-    "source=${localEnv:HOME}/.gitignore,target=/root/.gitignore,type=bind,consistency=cached,readonly",
-    "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,readonly"
+    "source=${localEnv:HOME}/.gitconfig,target=/root/.gitconfig,type=bind,readonly",
+    "source=${localEnv:HOME}/.gitconfig.local,target=/root/.gitconfig.local,type=bind,readonly",
+    "source=${localEnv:HOME}/.gitignore,target=/root/.gitignore,type=bind,readonly",
+    "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,readonly",
+    "source=${localEnv:HOME}/.claude,target=/root/.claude,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.claude.json,target=/root/.claude.json,type=bind,consistency=cached"
   ],
   "remoteUser": "root",
   "customizations": {
