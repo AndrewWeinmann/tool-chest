@@ -6,6 +6,10 @@ Tools and resources for AI coding agents.
 
 Composable guidelines for AI coding agents to follow.
 
+## Claude Code
+
+Settings & config specific to Claude Code
+
 ## Prompts
 
 Prompts for AI coding agents to accomplish various tasks.
